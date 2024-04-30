@@ -80,8 +80,12 @@
   box-sizing: border-box;
 }
 
+blueee{
+    color: blue;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  :root {
+    : root {
     scroll-behavior: smooth;
   }
 }
