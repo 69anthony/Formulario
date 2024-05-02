@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crud-Formulario", "Crud-Formulario\Crud-Formulario.csproj", "{CE10AA4F-2704-4D91-B353-306692AB574C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{C3D18551-B21B-462F-BE3B-F660B1FFEED1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CE10AA4F-2704-4D91-B353-306692AB574C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE10AA4F-2704-4D91-B353-306692AB574C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE10AA4F-2704-4D91-B353-306692AB574C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D18551-B21B-462F-BE3B-F660B1FFEED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D18551-B21B-462F-BE3B-F660B1FFEED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D18551-B21B-462F-BE3B-F660B1FFEED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D18551-B21B-462F-BE3B-F660B1FFEED1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

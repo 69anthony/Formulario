@@ -22,7 +22,7 @@
     <asp:Label ID="lbl_puesto" runat="server" Text="Puesto" CssClass="badge" Font-Size="Large" ForeColor="#333300"></asp:Label>
     <asp:DropDownList ID="txt_puesto" runat="server" CssClass="form-control"></asp:DropDownList>  
 
-    <asp:Button ID="btn_crear" runat="server" Text="Crear" CssClass="btn btn-outline-primary"/>
+    <asp:Button ID="btn_crear" runat="server" Text="Crear" CssClass="btn btn-outline-primary" OnClick="btn_crear_Click"/>
     <asp:Button ID="btn_actualizar" runat="server" Text="Actualizar" CssClass="btn btn-outline-success"/>
 
     <asp:GridView ID="grid_empleado" runat="server" AutoGenerateColumns="False" CssClass="table-danger" DataKeyNames="id,id_puesto">
