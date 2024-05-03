@@ -31,7 +31,7 @@ namespace Modelo
             return dt;
         }
 
-        private DataTable grid_empleados() 
+        private DataTable grid_empleado() 
         {
             DataTable dt = new DataTable();
             conectar = new conexionBD();
@@ -42,6 +42,12 @@ namespace Modelo
             query.Fill(dt);
             conectar.CerarConexion();
             return dt;
+        }
+
+        public void grid_empleados(GridView grid)
+        {
+            grid.DataSource = grid_empleado();
+            grid.DataBind();
         }
 
     }
