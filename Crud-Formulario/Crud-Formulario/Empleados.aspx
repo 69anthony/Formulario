@@ -20,19 +20,23 @@
     <asp:TextBox ID="txt_fn" runat="server" CssClass="form-control" placeholder="yyyy-mm-dd" TextMode="Date"></asp:TextBox>
 
     <asp:Label ID="lbl_puesto" runat="server" Text="Puesto" CssClass="badge" Font-Size="Large" ForeColor="#333300"></asp:Label>
-    <asp:DropDownList ID="txt_puesto" runat="server" CssClass="form-control"></asp:DropDownList>  
-
+    <asp:DropDownList ID="drop_puesto" runat="server" CssClass="form-control" OnSelectedIndexChanged="drop_puesto_SelectedIndexChanged"></asp:DropDownList>
+    
     <asp:Button ID="btn_crear" runat="server" Text="Crear" CssClass="btn btn-outline-primary" OnClick="btn_crear_Click"/>
-    <asp:Button ID="btn_actualizar" runat="server" Text="Actualizar" CssClass="btn btn-outline-success"/>
+    <asp:Button ID="btn_actualizar" runat="server" Text="Actualizar" CssClass="btn btn-outline-success" Visible="False" OnClick="btn_actualizar_Click" />
+    
+    <asp:Label runat="server" ID="lbl_mensaje"></asp:Label>  
 
-    <asp:GridView ID="grid_empleado" runat="server" AutoGenerateColumns="False" CssClass="table-danger" DataKeyNames="id,id_puesto">
+    
+
+    <asp:GridView ID="grid_empleado" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered" DataKeyNames="id,id_puesto" OnSelectedIndexChanged="grid_empleado_SelectedIndexChanged" OnRowDeleting="grid_empleados_RowDeleting">
         <Columns>
             <asp:BoundField DataField="codigo" HeaderText="Codigo" />
-            <asp:BoundField DataField="nombre" HeaderText="Nombres" />
-            <asp:BoundField DataField="apellido" HeaderText="Apellidos" />
+            <asp:BoundField DataField="nombres" HeaderText="Nombres" />
+            <asp:BoundField DataField="apellidos" HeaderText="Apellidos" />
             <asp:BoundField DataField="direccion" HeaderText="Direccion" />
-            <asp:BoundField DataField="telefono" HeaderText="Telefono" />
-            <asp:BoundField DataField="fechaNacimiento" HeaderText="Nacimiento" />
+            <asp:BoundField DataField="telefonos" HeaderText="Telefono" />
+            <asp:BoundField DataField="fecha_nacimiento" HeaderText="Nacimiento" />
             <asp:BoundField DataField="puesto" HeaderText="Puesto" />
             <asp:TemplateField ShowHeader="False">
                 <ItemTemplate>

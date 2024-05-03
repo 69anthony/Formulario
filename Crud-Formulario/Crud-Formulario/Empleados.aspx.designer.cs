@@ -132,13 +132,13 @@ namespace Crud_Formulario
         protected global::System.Web.UI.WebControls.Label lbl_puesto;
 
         /// <summary>
-        /// Control txt_puesto.
+        /// Control drop_puesto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList txt_puesto;
+        protected global::System.Web.UI.WebControls.DropDownList drop_puesto;
 
         /// <summary>
         /// Control btn_crear.
@@ -157,6 +157,15 @@ namespace Crud_Formulario
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_actualizar;
+
+        /// <summary>
+        /// Control lbl_mensaje.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_mensaje;
 
         /// <summary>
         /// Control grid_empleado.
