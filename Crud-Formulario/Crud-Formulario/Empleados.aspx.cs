@@ -12,8 +12,14 @@ namespace Crud_Formulario
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        Empleado empleado;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                empleado = new Empleado();
+                empleado.grid_empleados(grid_empleado);
+            }
 
         }
 
